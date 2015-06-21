@@ -15,7 +15,7 @@ flag = 0;
 for line in fh:
     s = hashlib.md5(line.rstrip().encode())
     if inp == s.hexdigest():
-        print "\nMatch found! -", line
+        print "\nMatch found -", line
         flag = 1;
         break
 
