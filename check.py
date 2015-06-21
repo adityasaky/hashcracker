@@ -26,6 +26,7 @@ for line in fh:
     if inp == s:
         print "Match found! - ", line
         flag = 1;
+        break
 
 if flag == 0:
     print "No match found."
