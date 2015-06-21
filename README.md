@@ -5,9 +5,10 @@ Feel free to use your own wordlist. Just replace words.txt with your own file an
 
 ##Installation
 
-1. Download the zip and extract the contents.
-2. Open terminal in the directory.
-3. ###Run:
+###Download
+Download the zip and extract the contents. Open terminal in the directory.
+
+###For md5sum, run:
 ```
 python check_md5.py
 ```
@@ -17,7 +18,7 @@ python encode_md5.py
 ```
 to generate md5sum of any word.
 
-###Run:
+###For sha1, run:
 ```
 python check_sha1.py
 ```
