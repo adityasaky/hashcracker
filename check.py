@@ -29,3 +29,5 @@ for line in fh:
 
 if flag == 0:
     print "No match found."
+
+fh.close();
