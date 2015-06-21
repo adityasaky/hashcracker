@@ -8,4 +8,4 @@ print "\nYou entered", inp
 import hashlib
 
 s = hashlib.sha1(inp.encode())
-print "\nThe sha1 is", s.hexdigest(),"."
+print "\nThe sha1 is", s.hexdigest()
