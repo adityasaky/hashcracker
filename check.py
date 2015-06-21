@@ -4,7 +4,7 @@ print "\nYou can find this on http://github.com/paradoxdjell/hashcracker"
 print "\nFeel free to use your own wordlist. Just replace words.txt with your own file and ensure it is named words.txt.";
 
 inp = raw_input("\nEnter the md5 sum: ")
-print "\nYou entered ",inp
+print "\nYou entered",inp
 
 import hashlib
 
@@ -15,7 +15,7 @@ flag = 0;
 for line in fh:
     s = hashlib.md5(line.rstrip().encode())
     if inp == s.hexdigest():
-        print "\nMatch found! - ",line
+        print "\nMatch found! -",line
         flag = 1;
         break
 
