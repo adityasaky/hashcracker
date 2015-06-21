@@ -3,8 +3,13 @@ print "\nThis is a simple hashcracker I wrote in Python.";
 print "\nYou can find this on http://github.com/paradoxdjell/hashcracker"
 print "\nFeel free to use your own wordlist. Just replace words.txt with your own file and ensure it is named words.txt.";
 
+import sys
+
 inp = raw_input("\nEnter the sha1 code: ")
 print "\nYou entered", inp
+if len(inp) != 40:
+    print "This isn't an md5sum."
+    sys.exit()
 
 import hashlib
 
