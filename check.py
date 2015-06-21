@@ -22,7 +22,6 @@ for line in fh:
     a.assignment
     m.update(line)
     s = m.hexdigest()
-    print s
     if inp == s:
         print "Match found! - ", line
         flag = 1;
