@@ -8,4 +8,4 @@ print "\nYou entered ", inp
 import hashlib
 m = hashlib.md5()
 m.update(inp)
-print "\n", m.hexdigest()
+print "\nThe md5sum is ", m.hexdigest()
