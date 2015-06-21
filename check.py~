@@ -13,6 +13,7 @@ class A:
 a = A()
 
 import hashlib
+m = hashlib.md5()
 
 fh = open("words.txt", "r")
 
@@ -20,8 +21,9 @@ flag = 0;
 
 for line in fh:
     a.assignment
-    s = hashlib.md5(line.encode())
-    if inp == s.hexdigest():
+    m.update(line)
+    s = m.hexdigest()
+    if inp == s:
         print "\nMatch found! - ", line
         flag = 1;
         break
